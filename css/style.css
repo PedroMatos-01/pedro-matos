@@ -76,3 +76,18 @@ nav a:hover {
   padding: 1rem 0;
   border-bottom: 1px solid var(--texto);
 }
+
+@media (max-width: 600px) {
+  .apresentacao {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  nav {
+    justify-content: center;
+  }
+}
