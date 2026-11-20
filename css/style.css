@@ -91,3 +91,18 @@ nav a:hover {
     justify-content: center;
   }
 }
+
+body.escuro {
+  --fundo: #0f1a2e;
+  --texto: #e9eef2;
+}
+
+#botao-tema {
+  margin-left: auto;
+  background: none;
+  border: 2px solid var(--texto);
+  color: var(--texto);
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  cursor: pointer;
+}
