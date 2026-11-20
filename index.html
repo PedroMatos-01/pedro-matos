@@ -4,29 +4,69 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pedro Henrique de Matos</title>
+  <link rel="stylesheet" href="css/style.css">
   <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <link rel="stylesheet" href="css/style.css">
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projetos.html">Projetos</a>
-            <button id="botao-tema">Modo escuro</button>
-        </nav>
-    </header>
-    <main>
-    <section class="apresentacao">
-        <div>
+  <header>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <button id="botao-tema">Modo escuro</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="apresentacao">
+      <div>
         <h1>Pedro Henrique de Matos</h1>
         <p>
-            Estudo <strong>Sistemas de Informação na UFLA</strong> e quero me tornar
-            <strong>desenvolvedor back-end</strong>.
+          Estudo <strong>Sistemas de Informação na UFLA</strong> e quero me tornar
+          <strong>desenvolvedor back-end</strong>.
         </p>
-        </div>
-        <img src="img/My.jpeg" alt="Foto de Pedro Henrique de Matos" width="200">
+      </div>
+      <img src="img/My.jpeg" alt="Foto de Pedro Henrique de Matos" width="200">
     </section>
-    </main>
+
+    <section id="sobre">
+      <h2>Sobre mim</h2>
+      <p>
+        Sou estudante de Sistemas de Informação na UFLA, em Lavras (MG),
+        e meu objetivo é trabalhar com desenvolvimento back-end.
+      </p>
+      <h3>Tecnologias</h3>
+      <ul class="tecnologias">
+        <li>Java (básico)</li>
+        <li>Python (básico)</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>Node.js</li>
+        <li>React</li>
+        <li>HTML e CSS</li>
+        <li>SQL</li>
+      </ul>
+    </section>
+
+    <section id="projetos">
+      <h2>Projetos</h2>
+      <div class="filtros">
+        <button data-filtro="todos">Todos</button>
+        <button data-filtro="java">Java</button>
+        <button data-filtro="javascript">JavaScript</button>
+        <button data-filtro="react">React</button>
+      </div>
+      <ul class="projetos">
+        <li data-tecnologia="javascript">
+        <a href="https://github.com/PedroMatos-01/biblioteca-back">Biblioteca (back-end)</a>
+        <p>API do sistema de biblioteca.</p>
+        </li>
+        <li data-tecnologia="javascript react">
+        <a href="https://github.com/PedroMatos-01/biblioteca-front">Biblioteca (front-end)</a>
+        <p>Interface em React que consome a API.</p>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>

@@ -148,3 +148,19 @@ body.escuro {
 .tecnologias li:hover {
   transform: translateY(-4px);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--fundo);
+  z-index: 10;
+}
+
+section {
+  padding: 3rem 0;
+  scroll-margin-top: 4rem;
+}
