@@ -126,3 +126,25 @@ body.escuro {
   background-color: var(--destaque);
   color: #14213d;
 }
+
+.projetos li {
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.projetos li:hover {
+  transform: translateX(8px);
+  background-color: var(--destaque);
+  color: #14213d;
+}
+
+.projetos li:hover a {
+  color: #14213d;
+}
+
+.tecnologias li {
+  transition: transform 0.2s;
+}
+
+.tecnologias li:hover {
+  transform: translateY(-4px);
+}
