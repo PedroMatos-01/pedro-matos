@@ -106,3 +106,23 @@ body.escuro {
   font: inherit;
   cursor: pointer;
 }
+
+.filtros {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.filtros button {
+  background: none;
+  border: 2px solid var(--texto);
+  color: var(--texto);
+  padding: 0.3rem 0.8rem;
+  font: inherit;
+  cursor: pointer;
+}
+
+.filtros button:hover {
+  background-color: var(--destaque);
+  color: #14213d;
+}
